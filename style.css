@@ -16,7 +16,7 @@
     min-height: 100%;
     position: relative;
 
-    background-color: #dadada;
+    background-image: repeating-radial-gradient(#d1d1d1,#343434);
  
     border: solid #000000 8px;
 
@@ -25,7 +25,7 @@
 
 .title {
 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #000000 ;
     letter-spacing: 16px;
@@ -34,7 +34,7 @@
 }
 
 .title2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #dadada ;
 
@@ -45,7 +45,7 @@
 
 .title3{
 
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #494949;
     
@@ -68,7 +68,7 @@
 }
 
 .discribing{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     font-size: larger; 
 
@@ -97,23 +97,31 @@
     margin-right: auto;
 
 }
+.pa1:hover{
+    transform: scale(2);
+    border: 6px #303823 solid;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 .a1{
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     
     color: #303823 ;
 
 }
 
 .p1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     
     color: #303823;
 }
 
 .la1{
-
-    font-family: Arial, Helvetica, sans-serif;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #216437 ;
 }
@@ -121,7 +129,7 @@
 
 .lt1{
 
- font-family: Arial, Helvetica, sans-serif;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #216437  ;
 }
@@ -149,29 +157,37 @@
     margin-left: auto;
     margin-right: auto;
 }
+.pa2:hover{
+    transform: scale(2);
+    border: 6px #c3c3c3 solid;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
 .a2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #ededed;
 }
 
 .la2{
 
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #a79bcc  ;
 
 }
 
 .lt2{
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #a79bcc  ;
 }
 
 
 .p2{
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #c3c3c3;
     
@@ -202,17 +218,26 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
+.pa3:hover{
+transform: scale(2);
+border: 6px #7d7d7d solid;
+
+display: block;
+
+margin-left: auto;
+margin-right: auto;
+}
 
 .a3{
 
-    font-family: Arial, Helvetica, sans-serif;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #030015 ;
 }
 
 .la3{
 
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #09063f  ;
     
@@ -220,25 +245,25 @@ font-family: Arial, Helvetica, sans-serif;
 
 .lt3{
 
- font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #09063f  ;
 
 }
 
 .p3{
-     font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #09063f 
 }
 
 .title4{
 
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #494949;
     
-    text-align: left;
+    text-align: center;
 
     border-top: dashed #232323 5px ;
     border-bottom: dashed #232323 5px;
@@ -255,11 +280,11 @@ font-family: Arial, Helvetica, sans-serif;
 
 .title5{
 
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
     color: #494949;
     
-    text-align: left;
+    text-align: center;
 
     border-top: dashed #232323 5px ;
     border-bottom: dashed #232323 5px;
@@ -267,15 +292,22 @@ font-family: Arial, Helvetica, sans-serif;
 
 .INB{
     
-    border: #fff4e5 10px solid;
-    background-color: #ffebca8a;
+    border: #555555 6px solid;
+    background-color: #d3d3d3b1;
 
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .IN1{
 
-    border: #2f200c 10px solid;
-    background-color: #ffebcae1;
+    border: #555555 10px solid;
+    background-color: #d3d3d3b1;
     height: auto;
     width: 330px;
 
@@ -285,7 +317,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 .i1t{
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     color: #2f200c;
     text-align: left;
 
@@ -294,22 +326,18 @@ font-family: Arial, Helvetica, sans-serif;
 .PI1{
     display: block;
     margin-top: auto;
-    border: #2f200c solid 10px;
+   border: #555555 10px solid;
 }
 
 .IN2{
-    border: #2f200c 10px solid;
-    background-color: #ffebcae1;
+    border: #555555 10px solid;
+    background-color: #d3d3d3b1;
     height: auto;
     width: 330px;
-
-    margin-left: 25%;
-    margin-right:75%;
-    margin-top: -238px;
 }
 
 .i2t{
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     color: #2f200c;
     text-align: left;
 
@@ -318,22 +346,18 @@ font-family: Arial, Helvetica, sans-serif;
 .PI2{
     display: block;
     margin-top: auto;
-    border: #2f200c solid 10px;
+    border: #555555 10px solid;
 }
 
 .IN3{
-    border: #2f200c 10px solid;
-    background-color: #ffebcae1;
+    border: #555555 10px solid;
+    background-color: #d3d3d3b1;
     height: auto;
     width: 330px;
-
-    margin-left: 50%;
-    margin-right:50%;
-    margin-top: -237px;
 }
 
 .i3t{
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     color: #2f200c;
     text-align: left;
 
@@ -342,21 +366,18 @@ font-family: Arial, Helvetica, sans-serif;
 .PI3{
     display: block;
     margin-top: auto;
-    border: #2f200c solid 10px;
+    border: #555555 10px solid;
 }
 
 .IN4{
-      border: #2f200c 10px solid;
-    background-color: #ffebcae1;
+    border: #555555 10px solid;
+    background-color: #d3d3d3b1;
     height: auto;
     width: 300px;
 
-    margin-left: 1120px;
-    margin-top: -237px;
-
 }
 .i4t{
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     color: #2f200c;
     text-align: left;
 
@@ -365,45 +386,40 @@ font-family: Arial, Helvetica, sans-serif;
 .PI4{
     display: block;
     margin-top: auto;
-    border: #2f200c solid 10px;
+    border: #555555 10px solid;
     margin-left: 30px;
     
 }
 
 .IN5{
-     border: #2f200c 10px solid;
-    background-color: #ffebcae1;
+    display: block;
+    border: #555555 10px solid;
+    background-color: #d3d3d3b1;
     height: auto;
     width: 330px;
 
-    margin-left: 80;
-    margin-top: 30px;
 
 }
 
 .i5t{
 
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     color: #2f200c;
     text-align: left;
-
 }
 
 .IN6{
-     border: #2f200c 10px solid;
-    background-color: #ffebcae1;
+    border: #555555 10px solid;
+    background-color: #d3d3d3b1;
     height: auto;
     width: 330px;
 
-    margin-left: 25%;
-    margin-right:75%;
-    margin-top: -238px;
 
 }
 
 .i6t{
 
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     color: #2f200c;
     text-align: left;
 
@@ -411,22 +427,23 @@ font-family: Arial, Helvetica, sans-serif;
 
 .IN7{
 
-    border: #2f200c 10px solid;
-    background-color: #ffebcae1;
+    border: #555555 10px solid;
+    background-color: #d3d3d3b1;
     height: auto;
     width: 330px;
-
-    margin-left: 50%;
-    margin-right:50%;
-    margin-top: -237px;
 
 }
 
 .PI8{
      display: block;
     margin-top: auto;
-    border: #2f200c solid 10px;
+   border: #555555 10px solid;
 
+}
+
+a.INLI{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    color: #494949 !important;
 }
 
 .upf{
@@ -442,5 +459,70 @@ font-family: Arial, Helvetica, sans-serif;
     width: 40px;
     background-color: #d1d1d1;
     color:#372424;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+.upb:hover{
+    display: block;
+    border: #030015 dashed 2px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffadad;
+    color:#5e0000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+.TBB{
+    display: block;
+    margin-left: 40%;
+    
+}
+.table{
+    border: solid 2px;
+}
+.Bl{
+    border: #000000 solid 1px;
+    background-image: radial-gradient(#FFF, #bebebe);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    text-align: center;
+}
+
+.PhTa{
+    display: block;
+    border:#303823 2px solid ;
+}
+.PhTa:hover{
+    transform: scale(3);
+    display: block;
+    border:#303823 2px solid ;
+    background: #FFF;
+}
+
+.PoiB{
+    border: #000000 solid 5px;
+    background-color: #bebebeba;
+    display: flex;
+}
+
+.poisk{
+    width: 500px;
+    height: 100px;
+    border-right: #000000 dashed 2px;
+}
+.input{
+    margin-top: 5%;
+    margin-left: 3%;
+    height: 50px;
+    width: 400px;
+    border: #000000 1px solid;
+    color: #333333;
+    background-color: #efefef;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: large;
+
+}
+.screen{
+    display: block;
+    width: 200px;
+    height: 50px;
+
 }
