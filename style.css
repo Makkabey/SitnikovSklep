@@ -270,7 +270,9 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 }
 
 .CA{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
     border: #303823 solid 10px;
     background-color: #ededed;
     margin-right: 25%;
