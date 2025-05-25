@@ -5,7 +5,6 @@
 
         <meta charset="utf-8">
         <title>Ситниковщина</title>
-
         <link rel = 'stylesheet' href="style.css">
 
     </head>
@@ -131,7 +130,7 @@
         </div>
 
         <form action="#top" class='upf'>
-            <button class='upb' type="submit">UP</button>
+            <button class='upb' type="submit" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">UP</button>
         </form>
 
         <h2 class='title4'>ОбЩАЯ ИНФОРМАЦИЯ ПРО АЛЬБОМЫ</h2>
@@ -166,18 +165,26 @@
 </table>
 </div>
 
-      <h2 class='title4'>ПОИСК ПЕСНИ(в разработке)</h2>
+      <h2 class='title4'>ПОИСК ПЕСНИ(2 и 3 альбомы в разработке)</h2>
       <div class='PoiB'>
         <div class='poisk'>
-            <input class='input' type="text" placeholder="🔍︎введите название песни">
+            <input id="SaS" class='input' type="text" placeholder="🔍︎введите название песни">
         </div>
         <div class = 'screen'>
-
+          <audio id="pskaud"></audio>
+          <div class="SBF">
+           <button class='stopsong' id="stopsong" >STOP</button>
+           </div>
         </div>
 
       </div>
 
 
     </body>
+
+    <footer>
+    <script src="./script.js"></script>
+
+    </footer>
 
 </html>

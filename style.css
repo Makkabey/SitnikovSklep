@@ -502,8 +502,31 @@ a.INLI{
     border: #000000 solid 5px;
     background-color: #bebebeba;
     display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: large;
+
 }
 
+.SBF{
+    position: relative;
+    top: 50%;
+    left: 2px;
+}
+.stopsong{
+    border: #000000 solid 5px;
+    background-color: #5e0000;
+    color: #dadada;
+}
+.stopsong:hover{
+    border: #000000 solid 5px;
+    background-color: #9d0505;
+    color: #ffffff;
+}
+.stopsong{
+    border: #000000 solid 5px;
+    background-color: #5e0000;
+    color: #dadada;
+}
 .poisk{
     width: 500px;
     height: 100px;
