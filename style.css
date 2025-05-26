@@ -76,16 +76,18 @@
 
     color: #494949;
 }
-
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
 .al1{
 
     border: #013400 10px solid;
 
     background-color: #eaffd0b7;
     width: 240px;
-    margin-left: 240px;
-
-    height: 420px;
+    margin-left: 20%;
 }
 
 .pa1{
@@ -135,18 +137,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 }
 
 .al2{
-
-    display: block;
-
     background-color: #333333e1;
 
     border: #1e1e1e solid 10px;
-
-    width: 240px;
-
-    margin-left: 600px;
-    margin-top: -440px;
-    height: 420px;
+     width: 240px;
 
 }
 .pa2{
@@ -196,17 +190,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
 
 .al3{
 
-    display: block;
-
     border: #232323 10px solid;
 
     background-color: #eaeaeab5;
-
-    width: 240px;
-
-    margin-left: 960px;
-    margin-top: -440px;
-    height: 420px;
+     width: 240px;
 }
 
 .pa3{
