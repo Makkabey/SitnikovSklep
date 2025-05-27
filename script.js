@@ -10,7 +10,10 @@ const audiomapAl1 ={
     "хэллоустрэнжир":"music/ptcem/al1/HllStrng.mp3",
     "хэллоу,стрэнжир":"music/ptcem/al1/HllStrng.mp3",
     "хэллоу,стрэнжир!":"music/ptcem/al1/HllStrng.mp3",
-    "хэллоустрэнжир!":"music/ptcem/al1/HllStrng.mp3",
+    "хэллоустрэнжир!":"music/ptcem/al
+    
+    
+    1/HllStrng.mp3",
     "хеллоустрэнжир":"music/ptcem/al1/HllStrng.mp3",
     "хеллоу,стрэнжир":"music/ptcem/al1/HllStrng.mp3",
     "хеллоу,стрэнжир!":"music/ptcem/al1/HllStrng.mp3",
