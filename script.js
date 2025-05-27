@@ -48,7 +48,7 @@ const audiomapAl2 ={
     "этопадучая":"music/ptcem/al2/falling.mp3",
     "великомученникголобородькотолик":"music/ptcem/al2/jesus.mp3",
     "великомученник":"music/ptcem/al2/jesus.mp3",
-    "стигматпереводилка":"music/ptcem/al2/stigmat.np3",
+    "стигматпереводилка":"music/ptcem/al2/stigmat.mp3",
     "стигмат-переводилка":"music/ptcem/al2/stigmat.mp3",
     "нумеруно":"music/ptcem/al2/numerouno.mp3",
     "нумероуно":"music/ptcem/al2/numerouno.mp3",
