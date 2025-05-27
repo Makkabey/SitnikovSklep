@@ -10,10 +10,7 @@ const audiomapAl1 ={
     "хэллоустрэнжир":"music/ptcem/al1/HllStrng.mp3",
     "хэллоу,стрэнжир":"music/ptcem/al1/HllStrng.mp3",
     "хэллоу,стрэнжир!":"music/ptcem/al1/HllStrng.mp3",
-    "хэллоустрэнжир!":"music/ptcem/al
-    
-    
-    1/HllStrng.mp3",
+    "хэллоустрэнжир!":"music/ptcem/al1/HllStrng.mp3",
     "хеллоустрэнжир":"music/ptcem/al1/HllStrng.mp3",
     "хеллоу,стрэнжир":"music/ptcem/al1/HllStrng.mp3",
     "хеллоу,стрэнжир!":"music/ptcem/al1/HllStrng.mp3",
@@ -35,7 +32,31 @@ const audiomapAl1 ={
     "любовьводинконец":"music/ptcem/al1/LvOK.mp3",
 };
 
-function SearchSong(Sas,stopsong, pskaud,audiomapAl1){
+const audiomapAl2 ={
+    "аморальноинтро":"music/ptcem/al2/AmoralIntro.mp3",
+    "биохазард":"music/ptcem/al2/Biohazard.mp3",
+    "ончужойонплохой":"music/ptcem/al2/hebad.mp3",
+    "ончужой-онплохой":"music/ptcem/al2/hebad.mp3",
+    "ончужой":"music/ptcem/al2/hebad.mp3",
+    "фристайлполюбви":"music/ptcem/al2/freestyle.mp3",
+    "пьющая":"music/ptcem/al2/drinking.mp3",
+    "ялюблюлюдей":"music/ptcem/al2/lovepeople.mp3",
+    "ялюблюлюдейнарасстоянииметра":"music/ptcem/al2/lovepeople.mp3",
+    "ялюблюлюдей(нарасстоянииметра)":"music/ptcem/al2/lovepeople.mp3",
+    "похабноемеждутречие":"music/ptcem/al2/between.mp3",
+    "ненифер":"music/ptcem/al2/notnifer.mp3",
+    "этопадучая":"music/ptcem/al2/falling.mp3",
+    "великомученникголобородькотолик":"music/ptcem/al2/jesus.mp3",
+    "великомученник":"music/ptcem/al2/jesus.mp3",
+    "стигматпереводилка":"music/ptcem/al2/stigmat.np3",
+    "стигмат-переводилка":"music/ptcem/al2/stigmat.mp3",
+    "нумеруно":"music/ptcem/al2/numerouno.mp3",
+    "нумероуно":"music/ptcem/al2/numerouno.mp3",
+    "стараяподруга":"music/ptcem/al2/oldfriend.mp3",
+    "безпримесей":"music/ptcem/al2/withoutother.mp3",
+};
+
+function SearchSong(Sas,stopsong, pskaud,audiomapAl1,audiomapAl2){
 
     Sas.addEventListener("change",() =>{
         const word=Sas.value.trim().toLowerCase().replace(/\s+/g, '');
@@ -43,6 +64,9 @@ function SearchSong(Sas,stopsong, pskaud,audiomapAl1){
             pskaud.src=audiomapAl1[word];
             pskaud.play();
         }
+        else if(audiomapAl2[word]){
+            pskaud.src=audiomapAl2[word];
+            pskaud.play(); }
         else{alert("Песня отсутствует");}
     })
     stopsong.addEventListener("click",()=>{
@@ -53,4 +77,4 @@ function SearchSong(Sas,stopsong, pskaud,audiomapAl1){
     })
 };
 
-SearchSong(Sas,stopsong, pskaud, audiomapAl1);
+SearchSong(Sas,stopsong, pskaud, audiomapAl1,audiomapAl2);
