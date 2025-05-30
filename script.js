@@ -138,7 +138,7 @@ function SearchSong(pause,timer,Sas,stopsong, pskaud,audiomapAl1,audiomapAl2,aud
 const GITHUB_USER = 'Makkabey';
 const GITHUB_REPO = 'SitnikovSklep';
 const ISSUE_NUMBER = 1;
-const GITHUB_TOKEN =  processe.env.GITHUB_TOKEN;
+const GITHUB_TOKEN = process.env.COMMENTS_TOKEN;
 const commentForm = document.getElementById('comment-form');
 const commentsDiv = document.getElementById('commentssee');
 
