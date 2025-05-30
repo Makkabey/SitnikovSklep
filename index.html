@@ -192,18 +192,12 @@
         </div>
         </div>
         <h2 class="title3">КОММЕНТАРИИ</h2>
-       <div class="commentsee">
-          <script src="https://utteranc.es/client.js"
-  repo="Makkabey/SitnikovSklep"
-  issue-term="number"
-  issue-number="1"
-  theme="github-light"
-  crossorigin="anonymous"
-  async>
-</script>
-
-        </div>
-
+         <form class="comments" id="comment-form">
+            <input class="comname" type="text" id="name" placeholder="Ваше имя" required><br>
+          <textarea class="textcom" id="text" placeholder="Ваш комментарий..." required></textarea><br>
+          <button class="sendbut" type="submit">Отправить</button>
+          </form>  
+          <div class="commentsee" id="commentssee"></div>
 
   <footer>
     <script src="./script.js"></script> 
