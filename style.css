@@ -624,3 +624,45 @@ a.INLI{
     color: #000000;
     border: #171717 solid 2px;
 }
+
+.comments{
+    border: #1e1e1e solid 5px;
+    width: 20%;
+    background-color: #ffffffa7;
+    color: #1e1e1e;
+}
+.comname{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: larger;
+    border: solid 2px #333333 ;   
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    width: 90%;
+}
+.textcom{
+    height: max-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: larger;
+    border: #333333 solid 2px;
+    margin-left: 2px;
+    width: 90%;
+}
+.sendbut{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: larger;
+    border: #333333 solid 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    color: #1e1e1e93;
+    width: 90%;
+}
+.sendbut:active{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: larger;
+    border: #333333 solid 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    color: #1e1e1e;
+    width: 90%;
+}

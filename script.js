@@ -135,4 +135,65 @@ function SearchSong(pause,timer,Sas,stopsong, pskaud,audiomapAl1,audiomapAl2,aud
     });
 };
 
+const GITHUB_USER = 'Makkabey';
+const GITHUB_REPO = 'SitnikovSklep';
+const ISSUE_NUMBER = 1;
+const GITHUB_TOKEN = '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';
+const commentForm = document.getElementById('comment-form');
+const commentsDiv = document.getElementById('commentssee');
+
+loadComments();
+
+commentForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const text = document.getElementById('text').value;
+
+    if (!name || !text) {
+        alert('Заполните все поля!');
+        return;
+    }
+
+    try {
+        await postComment(name, text);
+        commentForm.reset();
+        loadComments();
+    } catch (error) {
+        alert('Ошибка: что-то пошло не так');
+    }
+});
+
+async function postComment(name, text) {
+    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/issues/${ISSUE_NUMBER}/comments`;
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Authorization': `token ${GITHUB_TOKEN}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ body: `**${name}**: ${text}` }),
+    });
+
+    if (!response.ok) {
+        throw new Error('Не удалось отправить комментарий');
+    }
+}
+async function loadComments() {
+    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/issues/${ISSUE_NUMBER}/comments`;
+    const response = await fetch(url);
+    const comments = await response.json();
+
+    commentsDiv.innerHTML = '';
+    comments.forEach(comment => {
+        const commentHTML = `
+            <div class="comment">
+                <strong>${comment.body.split('**')[1]}</strong>
+                <p>${comment.body.split('**')[2]}</p>
+                <small>${new Date(comment.created_at).toLocaleString()}</small>
+            </div>
+        `;
+        commentsDiv.innerHTML += commentHTML;
+    });
+}
+
 SearchSong(pause,timer,Sas,stopsong, pskaud, audiomapAl1,audiomapAl2,audiomapAl3,polzun);
